@@ -1,8 +1,6 @@
-function square(integer) {
-    var a;
-    var hash = '#';
-    for (a = 0; a < integer; a++) {
-        console.log(hash.repeat(integer));
-    }
+function square(num){
+    str = "#"
+    strRow = str.repeat(num) + "\n"
+    return strRow.repeat(num)
 }
-square(5);
+console.log(square(5))

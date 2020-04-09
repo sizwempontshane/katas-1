@@ -1,9 +1,9 @@
 function evenOrodd(val) {
     if (val % 2 === 0) {
-        return 'even';
+        console.log('even');
     }
     else {
-        return 'odd';
+        console.log('odd');
     }
 }
-console.log(evenOrodd(27));
+evenOrodd(50);

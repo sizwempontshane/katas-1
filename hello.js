@@ -1,4 +1,4 @@
-function hello(a) {
-    return 'Hello ' + a;
+function hello(name){
+    console.log(("Hello "+name));
 }
-console.log(hello('Tshepo'));
+hello("Tshepo");
