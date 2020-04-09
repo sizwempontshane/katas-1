@@ -1,11 +1,11 @@
-function longest(arr){
-    var longStr = arr[0];
-    for (l = 0; l < arr.length; l++){
-        if (arr[l].length > longStr.length){
-            longStr = arr[l];
-        }
-    }
-    return longStr;
+function longest(array) {
+    var max = array[0].length;
+
+    array.map(v => max = Math.max(max, v.length));
+
+    result = array.filter(v => v.length == max);
+    var align = result.join('\n');
+
+    console.log(align);
 }
-console.log(longest(["the","quick","brown", "fox", "ate", "my", "chickens"]));
-console.log(longest(["once", "upon", "a", "time"]));
+longest(["once", "upon", "a", "time"]);

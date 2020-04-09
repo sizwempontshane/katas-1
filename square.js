@@ -4,3 +4,4 @@ function square(num){
     return strRow.repeat(num)
 }
 console.log(square(5))
+

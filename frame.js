@@ -1,15 +1,13 @@
-function frame(n) {
-    for (var i = 0; i <= n; i++) {
-        var star = ''.repeat()
-    }
-}
+function frame(array) {
+    var i;
+    var star = '*';
+    var border = star.repeat(10);
+    console.log(border);
 
-function frame(str){
-    for (var i = 0; i <= str[i]; i++) {
-    let border = '*'.repeat(str.length + 4)
-    return `${border}\n* ${str[i]} *\n${border}`
+    for (i = 0; i < array.length; i++) {
+        var column = star + ' ' + array[i] + ' '.repeat(7-array[i].length) + star;
+        console.log(column);
     }
+    console.log(border);
 }
-
-console.log(frame(["Hello", "World"]))
-// frame(["Hello", "World"]);
+frame(["Write","good","code","every","day"]);
