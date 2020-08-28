@@ -1,3 +1,9 @@
+//hello
+function hello(name) {
+  console.log("Hello " + name);
+}
+hello("Tshepo");
+
 // number is even or odd
 function evenOrodd(val) {
   if (val % 2 === 0) {
